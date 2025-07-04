@@ -81,11 +81,10 @@ private:
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
     try {
         DisplayRotator rotator;
-        //bool success = rotator.setOrientation(DisplayRotator::ROTATE_180);
-        //bool success = rotator.setOrientation(DisplayRotator::DEFAULT);
+        bool success = rotator.setOrientation(DisplayRotator::DEFAULT);
         //bool success = rotator.setOrientation(DisplayRotator::ROTATE_90);
         //bool success = rotator.setOrientation(DisplayRotator::ROTATE_180);
-        bool success = rotator.setOrientation(DisplayRotator::ROTATE_270);
+        //bool success = rotator.setOrientation(DisplayRotator::ROTATE_270);
         return success ? 0 : 1;
     }
     catch (const std::exception&) {
